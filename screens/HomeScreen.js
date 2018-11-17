@@ -7,18 +7,22 @@ import {
   Text,
   TouchableOpacity,
   View,
+  FlatList,
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
-import IconGrid from '../components/IconGrid';
+import { OrgList } from '../components/OrgList';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
 
+  data = [{key:'1', name: 'Moon Base Humane Society'},{key:'2', name: 'Paws4Love'},{key:'3', name: 'Dogs Dogs Dogs'}];
+
   render() {
+
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -27,8 +31,8 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>Your Organizations</Text>
           </View>
 
-          <View style={styles.inputMethodEditor}>
-            <IconGrid />
+          <View style={styles.getStartedContainer}>
+            <OrgList data={this.data} />
           </View>
           
         </ScrollView>
