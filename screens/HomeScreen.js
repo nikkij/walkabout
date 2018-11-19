@@ -31,7 +31,7 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>Your Organizations</Text>
           </View>
 
-          <View style={styles.getStartedContainer}>
+          <View>
             <OrgList data={this.data} />
           </View>
           

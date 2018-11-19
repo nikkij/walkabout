@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white',
-    }
+    } 
 });
 
 // Avatar.propTypes = {
