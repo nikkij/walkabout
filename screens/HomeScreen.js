@@ -32,7 +32,7 @@ export default class HomeScreen extends React.Component {
           </View>
 
           <View>
-            <OrgList data={this.data} />
+            <OrgList data={this.data} navigation={this.props.navigation} />
           </View>
           
         </ScrollView>
